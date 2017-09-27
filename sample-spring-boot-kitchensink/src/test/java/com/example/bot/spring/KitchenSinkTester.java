@@ -74,19 +74,19 @@ public class KitchenSinkTester {
 		assertThat(!thrown).isEqualTo(true);
 		assertThat(result).isEqualTo("def");
 	}
-}
-
 	@Test
 	public void testFoundabc() throws Exception {
 		boolean thrown = false;
 		String result = null;
 		try {
-			result = this.databaseEngine.search("abc");
+			result = this.databaseEngine.search("Hi");
 		} catch (Exception e) {
 			thrown = true;
 		}
 		assertThat(!thrown).isEqualTo(true);
-		assertThat(result).isEqualTo("whlaoaa says def");
+		assertThat(result).isEqualTo("Hey, how things going?");
 	}
 }
+
+	
 
